@@ -1,0 +1,13 @@
+{
+    "name": "email-queue-test",
+    "version": "1.0.0",
+    "main": "producer.js",
+    "scripts": {
+      "start:producer": "node producer.js",
+      "start:consumer": "node consumer.js"
+    },
+    "dependencies": {
+      "amqplib": "^0.10.3"
+    }
+  }
+  
