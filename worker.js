@@ -1,7 +1,7 @@
 const amqp = require("amqplib");
 
 async function consumeEmails() {
-  const connection = await amqp.connect("amqp://root:root@localhost:5672");
+  const connection = await amqp.connect("amqp://root:root@rabbitmq:5672");
   const channel = await connection.createChannel();
 
   const queue = "email_queue";

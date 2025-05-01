@@ -7,7 +7,7 @@ async function sendEmails() {
   const queue = "email_queue";
   await channel.assertQueue(queue, { durable: true });
 
-  for (let i = 1; i <= 1000; i++) { // Aqui são enviadas as informações do email
+  for (let i = 1; i <= 100000; i++) { // Aqui são enviadas as informações do email
     const email = {
       to: `cliente${i}@exemplo.com`,
       subject: "Sua nota fiscal chegou!",
